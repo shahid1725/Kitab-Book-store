@@ -1,0 +1,61 @@
+{%extends 'adminbase.html' %}
+
+{%block body_block%}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form action="" method="get">
+
+                {{filter.form.as_p}}
+                <input type="submit" value="submit">
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="card mt-5" style="width:100%;background:#2881b5;">
+                <h2 class="text-center mt-5"><strong>Books List</strong></h2>
+
+                <table style="color:white;"  class="table booklisttable">
+                    <tr>
+                        <th>BOOK NAME</th>
+                        <th>AUTHOR</th>
+                        <th>PRICE</th>
+                        <th>COPIES</th>
+                        <th>IMAGE</th>
+                        <th>ACTIONS</th>
+
+                    </tr>
+                    {%for Book in filter.qs%}
+                    <tr>
+                        <td>{{Book.name}}</td>
+                        <td>{{Book.author}}</td>
+                        <td>{{Book.price}}</td>
+                        <td>{{Book.copies}}</td>
+                        <td><img src="{{Book.image.url}}" alt="" width="100px" height="100px"></td>
+                        <td >
+                            <a style="width:100%;" href="{%url 'changebook' Book.id%}" class="btn btn-warning">Edit</a>
+                            <a style="width:100%;" href="{%url 'removebook' Book.id%}" class="btn btn-danger mt-1">Remove</a>
+                            <a style="width:100%;" href="{%url 'bookview' Book.id%}" class="btn btn-success mt-1">View</a>
+                        </td>
+                    </tr>
+
+
+                    {%endfor%}
+                </table>
+
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
+{%endblock%}
+

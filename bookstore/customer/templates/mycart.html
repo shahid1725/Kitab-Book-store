@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{%block body_block%}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table bg-white mt-5">
+
+                <tr class="">
+                    <td class="text-center"><b>CART LIST</b></td>
+                    <td><b>PRICE</b></td>
+                    <td><b>ACTION</b></td>
+                </tr>
+
+                {%for book in items%}
+
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="col-4">
+
+                                <img style="width:200px;height:250px;" src="{{book.item.image.url}}" alt="">
+
+                            </div>
+                            <div class="col-8">
+
+                                <h5 style="color:red;"><strong>{{book.item}}</strong></h5>
+                                <h6>{{book.item.author}}</h6>
+                                <h6>{{book.status}}</h6>
+
+                            </div>
+                        </div>
+
+
+                    </td>
+                    <td><b>₹ {{book.item.price}}</b></td>
+                    <td>
+
+                        <a href="{%url 'removecart' book.id%}" type="submit" class="deletebtn">Delete</a>
+                        <a href="{%url 'orderitem' book.id%}" type="submit" class="buybtn">Buy Now</a>
+
+
+                    </td>
+                </tr>
+{%endfor%}
+
+            </table>
+
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+                <div class="col-4">
+
+                    <div class="card mb-5">
+
+                        <h5 class="mb-4" style="margin:auto;"><strong>TOTAL = {{total}} </strong></h5>
+                        <a href="" type="submit" class="btn btn-warning"><b>Buy All</b></a>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{%endblock%}

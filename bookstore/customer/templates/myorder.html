@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{%block body_block%}
+
+<div class="row">
+    {%for orderitem in orders%}
+    <div class="col-6">
+
+
+        <div class="card booklistcard" style="width: 18rem;margin-top:20px;">
+            <img class="card-img-top" src="{{orderitem.item.image.url}}" alt="Card image cap">
+
+            <div class="card-body">
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-6">
+
+        <div class="card booklistcard bg-warning" style="width: 18rem;margin-top:20px;">
+            <div class="card-header bookdetials">
+                Book Details
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">BOOK NAME: {{orderitem.item}}</li>
+                <li class="list-group-item">₹ {{orderitem.item.price}}</li>
+                <li class="list-group-item">Status: {{orderitem.status}}</li>
+                <li class="list-group-item"> {{orderitem.order_date}}</li>
+                <a href="" type="submit" class="cancelbtn bg-warning">Cancel Order</a>
+            </ul>
+        </div>
+
+
+    </div>
+    {%endfor%}
+</div>
+
+{%endblock%}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Koulen&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Koulen&family=Metal+Mania&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Koulen&family=Metal+Mania&family=Potta+One&family=Tenali+Ramakrishna&display=swap');
+
+
+.library{
+font-family: 'Chicle', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Metal Mania', cursive;
+font-family: 'Potta One', cursive;
+font-family: 'Potta One', cursive;
+color:white;
+font-size:50px;
+margin-top:60px;
+
+}
+.signupform{
+padding:100px;
+font-size:5px;
+color:red;
+}
+
+.signupcard{
+margin-top:10px;
+
+}
+.signupbtn{
+background-color:green;
+border:none;
+color:white;
+font-weight:bold;
+font-size:20px;
+}

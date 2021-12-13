@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+{%extends 'customerbase.html' %}
+
+{%block body_block%}
+
+<div class="row">
+    <div class="col-"></div>
+    <div class="col-4">
+        {%if messages%}
+
+        {%for message in messages%}
+
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+
+        <div class="alert alert-success" role="alert">
+            {{message}}
+
+        </div>
+
+        {% endif %}
+
+        {%endfor%}
+
+
+        {%endif%}
+    </div>
+    <div class="col-4"></div>
+</div>
+
+
+
+<div class="row booklistrow mt-5">
+    {%for book in books%}
+    <div class="col-md-4">
+
+        <div class="card booklistcard" style="width: 22rem;">
+            <img style="height:360px;width:100%;" class="card-img-top" src="{{book.image.url}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{book.name}}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <h5><strong>₹ {{book.price}}</strong></h5>
+                <a href="{%url 'addcart' book.id%}" class="btn btn-danger">Add To Cart</a>
+                <a href="{%url 'orderitem' book.id %}" type="submit" class="btn btn-success w-100 buyhomebtn">Buy now</a>
+
+            </div>
+
+        </div>
+    </div>
+    {%endfor%}
+</div>
+
+{%endblock%}
+
+
+
+

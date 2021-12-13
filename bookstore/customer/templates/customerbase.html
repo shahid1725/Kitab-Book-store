@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--
+    Tinker CSS Template
+    https://templatemo.com/tm-506-tinker
+    -->
+    <title>Kithab | Online Library</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="{% static 'customerbasecss/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'customerbasecss/bootstrap-theme.min.css'%}">
+    <link rel="stylesheet" href="{% static 'customerbasecss/fontAwesome.css'%}">
+    <link rel="stylesheet" href="{% static 'customerbasecss/hero-slider.css'%}">
+    <link rel="stylesheet" href="{% static 'customerbasecss/owl-carousel.css'%}">
+    <link rel="stylesheet" href="{% static 'customerbasecss/templatemo-style.css'%}">
+    <link rel="stylesheet" href="{% static 'customerbasecss/lightbox.css'%}">
+
+    <script src="{% static 'customerbasejs/vendor/modernizr-2.8.3-respond-1.4.2.min.js'%}"></script>
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand scroll-top"><em>K</em>ITHAB</a>
+            </div>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" class="scroll-top">Home</a></li>
+                    <li><a href="#" class="scroll-link" data-id="about">About Us</a></li>
+                    <li><a href="#" class="scroll-link" data-id="portfolio">Portfolio</a></li>
+                    <li><a href="#" class="scroll-link" data-id="blog">Blog</a></li>
+                    <li><a href="{%url 'viewcart'%}"  data-id="contact-us">Cart</a></li>
+
+                </ul>
+            </div>
+            <!--/.navbar-collapse-->
+        </nav>
+        <!--/.navbar-->
+    </div>
+    <!--/.container-->
+</div>
+<!--/.header-->
+
+
+<div class="parallax-content baner-content" id="home">
+    <div class="container">
+        <div class="text-content">
+            <h1 class="kithab"><span class="k">K</span>ITHAB</h1>
+            <h2><em>AN ONLINE</em> <span>LIBRARY</span>PLATFORM</h2>
+            <p> We are India’s largest online book store and rightly so. Having served some of the best in the industry
+                for over 70 years – we are your one stop solution for all your book needs.
+
+            </p>
+            <div class="primary-white-button">
+                <a href="#" class="scroll-link" data-id="about">New Arrivals</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="about" class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="">
+                        <img src="{%static 'images/bookimg/death.jpg'%}" alt="">
+                    </div>
+                    <h4>Death Comes to All</h4>
+                    <div class="line-dec"></div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur,
+                        cum dolore enim explicabo hic inventore libero nostrum praesentium rem sed
+                        tenetur velit veniam voluptate voluptatibus. Alias iusto mollitia officia.</p>
+                    <div class="primary-blue-button">
+                        <a href="#" class="scroll-link" data-id="portfolio">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="">
+                        <img src="{%static 'images/bookimg/daivath_UvnDs6T.jpg'%}" alt="">
+                    </div>
+                    <h4>Daivathinte Charanmar</h4>
+                    <div class="line-dec"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium blanditiis
+                        delectus dolores est illo molestiae nemo, numquam,
+                        placeat possimus praesentium provident ratione sint sit, ut velit veritatis voluptatibus
+                        voluptatum.</p>
+                    <div class="primary-blue-button">
+                        <a href="#" class="scroll-link" data-id="portfolio">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="">
+                        <img src="{%static 'images/bookimg/jefri.jpg'%}" alt="">
+                    </div>
+                    <h4>Keyn & Abel</h4>
+                    <div class="line-dec"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloremque doloribus earum et eum
+                        excepturi hic ipsa labore maxime nemo
+                        odit perspiciatis quibusdam, reprehenderit similique tenetur. Ab accusamus animi temporibus!</p>
+                    <div class="primary-blue-button">
+                        <a href="#" class="scroll-link" data-id="portfolio">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="service-item">
+                    <div class="">
+                        <img src="{%static 'images/bookimg/chetan.jpg'%}" alt="">
+                    </div>
+                    <h4>Chetan Bagath</h4>
+                    <div class="line-dec"></div>
+                    <p>Lorem ipsum dolor sit amet, consectitiis commodi delectus
+                        dicta doloremque earum error
+                        ex facere facilis, id laboriosam minima dasyuio nisi quaerat quia quibusdam quisquam sunt
+                        tempora velit.</p>
+                    <div class="primary-blue-button">
+                        <a href="#" class="scroll-link" data-id="portfolio">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="content-wrapper">
+        <div class="inner-container container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="section-heading">
+                        <h4>Our Gallery</h4>
+                        <div class="line-dec"></div>
+                        <p>“Sometimes, you read a book and it fills you with this weird evangelical zeal, and you become
+                            convinced that the shattered world will never be put back together unless and until all
+                            living humans read the book.”</p>
+                        <div class="filter-categories">
+                            <ul class="project-filter">
+                                <li class="filter" data-filter="all"><span>Show All</span></li>
+                                <li class="filter" data-filter="branding"><span>Branding</span></li>
+                                <li class="filter" data-filter="graphic"><span>Graphic</span></li>
+                                <li class="filter" data-filter="nature"><span>Nature</span></li>
+                                <li class="filter" data-filter="animation"><span>Animation</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+
+                    <div class="row">
+
+                        {%block body_block%}
+
+                        {%endblock%}
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<section id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="owl-testimonials" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonials-item">
+                            <p>“ Quisque ullamcorper odio a nisl lacinia dictum. Vestibulum malesuada ipsum in turpis
+                                finibus, ut sagittis erat scelerisque. Curabitur non risus fringilla libero accumsan
+                                molestie et quis justo. ”</p>
+                            <h4>George Rich</h4>
+                            <span>Marketing Head</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonials-item">
+                            <p>“ Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam
+                                tincidunt metus nec eros dignissim consectetur. ”</p>
+                            <h4>John Henry</h4>
+                            <span>Art Director</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonials-item">
+                            <p>“ Aenean semper aliquam est ut maximus. Fusce id diam eget orci lobortis ultricies at ac
+                                velit. Curabitur laoreet massa et fringilla sagittis. ”</p>
+                            <h4>Danny Cute</h4>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonials-item">
+                            <p>“ Maecenas eu odio pharetra, elementum lorem eget, efficitur erat. Duis eget justo non
+                                nisi iaculis vestibulum. Aliquam erat volutpat. ”</p>
+                            <h4>Richard Beal</h4>
+                            <span>Senior Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tabs-content" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="wrapper">
+                <div class="col-md-4">
+                    <div class="section-heading">
+                        <h4>Our Blog Posts</h4>
+                        <div class="line-dec"></div>
+                        <p>Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida
+                            quam.</p>
+                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                            <li><a href="#tab1" class="active">Nulla eget convallis augue</a></li>
+                            <li><a href="#tab2">Quisque ultricies maximus</a></li>
+                            <li><a href="#tab3">Sed vel elit et lorem</a></li>
+                            <li><a href="#tab4">Vivamus purus neque</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <img src="{% static 'cutomerbaseimg/blog_item_01.jpg'%}" alt="">
+                            <div class="text-content">
+                                <h4>Nulla eget convallis augue</h4>
+                                <span><a href="#">Digital Marketing</a> / <a href="#">Honey</a> / <a href="#">21 September 2020</a></span>
+                                <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum,
+                                    porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                    inceptos himenaeos.</p>
+                            </div>
+                        </div>
+                        <div id="tab2">
+                            <img src="{% static 'cutomerbaseimg/blog_item_02.jpg'%}" alt="">
+                            <div class="text-content">
+                                <h4>Quisque ultricies maximus</h4>
+                                <span><a href="#">Branding</a> / <a href="#">David</a> / <a href="#">24 August 2020</a></span>
+                                <p>Etiam fringilla posuere pretium. Maecenas tempor pellentesque elit in dapibus.
+                                    Curabitur viverra urna sem, ut sollicitudin sem congue vel. Donec fringilla augue in
+                                    justo molestie fermentum quis ac mi.</p>
+                            </div>
+                        </div>
+                        <div id="tab3">
+                            <img src="{% static 'cutomerbaseimg/blog_item_03.jpg'%}" alt="">
+                            <div class="text-content">
+                                <h4>Sed vel elit et lorem</h4>
+                                <span><a href="#">Web Design</a> / <a href="#">William</a> / <a
+                                        href="#">18 July 2020</a></span>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    Curae; Fusce id ipsum porta, dictum sem sed, bibendum quam. Maecenas mattis risus
+                                    eget orci rhoncus.</p>
+                            </div>
+                        </div>
+                        <div id="tab4">
+                            <img src="{% static 'cutomerbaseimg/blog_item_04.jpg'%}" alt="">
+                            <div class="text-content">
+                                <h4>Vivamus purus neque</h4>
+                                <span><a href="#">E-Commerce</a> / <a href="#">George</a> / <a href="#">14 July 2020</a></span>
+                                <p>Aliquam erat volutpat. Nulla at nunc nec ante rutrum congue id in diam. Nulla at
+                                    lectus non turpis placerat volutpat lacinia ut mi. Quisque ultricies maximus justo a
+                                    blandit. Donec sit amet commodo arcu. Sed sit amet iaculis mi, vel fermentum nisi.
+                                    Morbi dui enim, vestibulum non accumsan ac, tempor non nisl.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="logo">
+                    <a class="logo-ft scroll-top" href="#"><em>K</em>ITHAB</a>
+                    <p>Copyright &copy; 202 Kithab Online
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="location">
+                    <h4>Info</h4>
+                    <ul>
+                        <li>46 Raffles Ave, <br>Singapore 039803</li>
+                        <li>12 Republic Blvd, <br>Singapore 038975</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="contact-info">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><em>Phone</em>: 040-040-0440</li>
+                        <li><em>Email</em>: kithab@company.co</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="connect-us">
+                    <h4>Get Social with us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="{% static 'customerbasejs/vendor/bootstrap.min.js'%}"></script>
+
+<script src="{% static 'customerbasejs/plugins.js'%}"></script>
+<script src="{% static 'customerbasejs/main.js'%}"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/97c1bde949.js" crossorigin="anonymous"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+
+
+</script>
+</body>
+</html>

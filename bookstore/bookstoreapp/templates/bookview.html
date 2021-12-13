@@ -1,0 +1,52 @@
+{%extends 'adminbase.html' %}
+
+{%block body_block%}
+
+<div class="container">
+    <div class="row">
+
+
+        <!--            <div class="card w-100">-->
+        <!--            <div class="card" style="width: 100%;">-->
+        <!--                <img src="{{books.image.url}}" class="card-img-top" alt="...">-->
+        <!--                <div class="card-body" style="color:black;">-->
+        <!--                    <h5 class="card-title">{{books.name}}</h5>-->
+
+        <!--                    <p style="color:black;" class="card-text"><span><strong>About author :</strong></span>Some quick-->
+        <!--                        example text to build on the card title and make up the bulk of the-->
+        <!--                        card's content.</p>-->
+        <!--                    <h6>{{books.price}}</h6>-->
+
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            </div>-->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card bookviewoutercard">
+                    <div class="row">
+                        <div class="col-6">
+
+                            <img src="{{books.image.url}}" class="card-img-top" alt="...">
+
+                        </div>
+                        <div style="color:black;" class="col-6 mt-5">
+
+                            <h2 style="color:#2881b5;" class="card-title"><strong>{{books.name}}</strong></h2>
+                            <p style="color:black;" class="card-text"><span><strong>About author :</strong></span>Some
+                                quick Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad architecto blanditiis consectetur cupiditate deleniti dolorum, eum facilis fuga fugiat ipsam libero nostrum quaerat quam quia, quo reprehenderit sint voluptatem?
+                                example text to build on the card title and make up the bulk of the cards content </p>
+
+                            <h4 class="bkviewprice"> ₹ {{books.price}}</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{%endblock%}
